@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Patient Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/firstNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstNameLabel"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/middleNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Middle Name"
+                android:layout_below="@id/firstNameEditText" />
+
+            <EditText
+                android:id="@+id/middleNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/middleNameLabel"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/lastNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_below="@id/middleNameEditText" />
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastNameLabel"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/suffixLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suffix"
+                android:layout_below="@id/lastNameEditText" />
+
+            <EditText
+                android:id="@+id/suffixEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/suffixLabel"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/dobLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_below="@id/suffixEditText" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:hint="Select Date"
+                android:layout_below="@+id/dobLabel"
+                android:inputType="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="showDatePicker"/>
+
+            <TextView
+                android:id="@+id/genderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_below="@id/editTextDate" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genderLabel"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/contactNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:layout_below="@id/genderSpinner" />
+
+            <EditText
+                android:id="@+id/contactNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactNumberLabel"
+                android:layout_marginTop="8dp"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/addressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_below="@id/contactNumberEditText" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressLabel"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_below="@id/addressEditText"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

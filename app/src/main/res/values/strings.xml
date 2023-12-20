@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- login strings -->
+
+    <string name="app_name">DentaMobile</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="email_string">Email</string>
+    <string name="enter_your_email_string">Enter your email</string>
+    <string name="enter_your_password_string">Enter your password</string>
+    <string name="password_string">Password</string>
+    <string name="login_string">Login</string>
+    <string name="sign_in_with_google_string">Sign In With Google</string>
+    <string name="create_an_account_string">Create an Account</string>
+    <string name="remember_me_string">Remember Me</string>
+    <string name="forget_password_string">Forget Password</string>
+    <string name="or_string">OR</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+</resources>

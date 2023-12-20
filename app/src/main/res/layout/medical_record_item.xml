@@ -1,0 +1,15 @@
+<!-- medical_record_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:src="@drawable/baseline_person_24" />
+
+
+
+</RelativeLayout>
